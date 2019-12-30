@@ -61,7 +61,7 @@ func SendLineMsgHandler (w http.ResponseWriter, r *http.Request) {
 		for _, event := range events 	{
 			if event.Type == linebot.EventTypeMessage {
 				userid := "Your Line User ID1: \n  " + event.Source.UserID + "\n"
-				groupid := "Your Line Group ID1: \n  " + event.Source.GroupID + "\n"
+				groupid := "Your Line Group ID2: \n  " + event.Source.GroupID + "\n"
 				switch message := event.Message.(type) {
 					case *linebot.TextMessage:
 						if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(userid + groupid + "Message: \n  "+ message.Text)).Do(); err != nil {
