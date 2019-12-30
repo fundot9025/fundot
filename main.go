@@ -123,9 +123,9 @@ func InputMsgHandler(w http.ResponseWriter, r *http.Request) {
 		//v := url.Values{}
     } else {
         r.ParseForm()
-      /*  fmt.Println("User ID:", r.Form["method"])
+        fmt.Println("User ID:", r.Form["method"])
         fmt.Println("User ID:", r.Form["uid"])
-        fmt.Println("Message:", r.Form["msg"])*/
+        fmt.Println("Message:", r.Form["msg"])
     }		
 }
 func HelloServer(w http.ResponseWriter, r *http.Request) {
