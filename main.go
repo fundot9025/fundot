@@ -60,13 +60,18 @@ func SendLineMsgHandler (w http.ResponseWriter, r *http.Request) {
 	}else {
 		for _, event := range events 	{
 			if event.Type == linebot.EventTypeMessage {
-				userid := "Your Line User ID: \n  " + event.Source.UserID + "\n"
+				/*userid := "Your Line User ID: \n  " + event.Source.UserID + "\n"
 				groupid := "Your Line Group ID: \n  " + event.Source.GroupID + "\n"
 				switch message := event.Message.(type) {
 					case *linebot.TextMessage:
 						if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(userid + groupid + "Message: \n  "+ message.Text)).Do(); err != nil {
 				            log.Print(err)
-						}
+						}*/
+				
+				
+				
+				
+				
 				}
 			}
 		}
